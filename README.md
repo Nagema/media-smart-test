@@ -1,5 +1,8 @@
 Simple react app example for Mediasmart, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Project Title
+Media-smart member database
+
 ## Available Scripts
 
 Install dependencies with: 
@@ -30,4 +33,18 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 The endpoint needs an authorization parameter. To obtain it you have to look at the headers, using Chrome or a terminal and `curl`:
 
 `curl -v http://work.mediasmart.io/`
+
+### Member list 
+
+![screensot demo](images/member-list.png "Screenshot Demo")
+
+### Member detail
+
+![screensot character detail](images/member-detail.png "Screenshot detail")
+
+
+## Author
+
+* **Angelica Cavero** - *Initial work* - [Nagema](https://github.com/Nagema)
+
 
