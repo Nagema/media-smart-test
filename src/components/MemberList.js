@@ -7,12 +7,12 @@ class MemberList extends React.Component {
     const { members, handleLoadMore, isLoading } = this.props;
     return (
       <React.Fragment>
-        <Header/>
+        <Header />
         <main>
           <ul className='member-list'>
-            {members.map((member, index) => 
-                <li className='list-container' key={index}>
-                  <Link to={`/memberDetail/${member.id}`} style={{textDecoration: 'none'}}>
+            {members.map((member, index) =>
+              <li className='list-container' key={index}>
+                <Link to={`/memberDetail/${member.id}`} style={{ textDecoration: 'none' }}>
                   <div className=' list-info' >
                     <div className=' list-info-wrapper'>
                       <img src={member.image} alt={`${member.name} pic`} className='member-list-photo'></img>
@@ -21,11 +21,11 @@ class MemberList extends React.Component {
                     <h3 className=' member-list-age'>Age: {member.age} years old</h3>
                   </div>
                 </Link>
-              </li> 
+              </li>
             )}
           </ul>
           <div className='load-btn-wrapper'>
-            {isLoading ? <Loading/> : <button className='load-more-btn' onClick={handleLoadMore}>Load more</button>}
+            {isLoading ? <Loading /> : <button className='load-more-btn' onClick={handleLoadMore}>Load more</button>}
           </div>
         </main>
       </React.Fragment>

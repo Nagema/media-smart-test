@@ -20,13 +20,13 @@ class App extends React.Component {
   FetchAllData() {
     this.setState({
       isLoading: true,
-    }) 
+    })
     fetchMembersData({ page: this.state.page, pageSize: 20 })
       .then(members => {
         this.setState({
-          members: [ ...this.state.members, ...members],
+          members: [...this.state.members, ...members],
           isLoading: false,
-          
+
         })
       });
   }
@@ -39,30 +39,30 @@ class App extends React.Component {
 
   render() {
     const { members, isLoading } = this.state;
-    return  (
+    return (
       <div className="App">
         <Switch>
-        <Route exact path = "/" render={() => 
-          <MemberList 
-            members={members} 
-            handleLoadMore={this.handleLoadMore}
-            isLoading={isLoading}
+          <Route exact path="/" render={() =>
+            <MemberList
+              members={members}
+              handleLoadMore={this.handleLoadMore}
+              isLoading={isLoading}
             />
-          }/>
-          <Route path="/memberDetail/:id" 
-          render={(memberData) =>
-          <MemberDetail
-           memberId = {memberData.match.params.id}
-          members={members}
-          isLoading={isLoading}
+          } />
+          <Route path="/memberDetail/:id"
+            render={(memberData) =>
+              <MemberDetail
+                memberId={memberData.match.params.id}
+                members={members}
+                isLoading={isLoading}
+              />
+            }
           />
-        }
-          />
-            </Switch>
+        </Switch>
       </div>
-        );
-      }
-    }
-    
-    export default App;
-    
+    );
+  }
+}
+
+export default App;
+
