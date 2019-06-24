@@ -1,7 +1,7 @@
 Simple react app example for Mediasmart, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Project Title
-Media-smart member database
+# Media-smart member database
+
 
 ## Available Scripts
 
@@ -45,6 +45,6 @@ The endpoint needs an authorization parameter. To obtain it you have to look at 
 
 ## Author
 
-* **Angelica Cavero** - *Initial work* - [Nagema](https://github.com/Nagema)
+* **Angelica Cavero** - [Nagema](https://github.com/Nagema)
 
 
