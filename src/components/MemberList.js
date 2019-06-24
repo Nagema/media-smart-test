@@ -12,7 +12,7 @@ class MemberList extends React.Component {
           <ul className='member-list'>
             {members.map((member, index) =>
               <li className='list-container' key={index}>
-                <Link to={`/memberDetail/${member.id}`} style={{ textDecoration: 'none' }}>
+                <Link to={`/${member.name}/${member.id}`} style={{ textDecoration: 'none' }}>
                   <div className=' list-info' >
                     <div className=' list-info-wrapper'>
                       <img src={member.image} alt={`${member.name} pic`} className='member-list-photo'></img>

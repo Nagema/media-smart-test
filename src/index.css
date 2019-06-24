@@ -78,7 +78,7 @@ body {
 }
 
 .member-list-name {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 20px;
   padding: 0 10px;
   color: #383d48;
@@ -178,6 +178,10 @@ body {
   transform: skewX(-5deg);
 }
 
+.go-back-btn:hover {
+  background-color: rgb(227, 51, 68);
+}
+
 .show-more-btn {
   border: none;
   text-transform: capitalize;
@@ -185,6 +189,14 @@ body {
   text-decoration: underline;
   color: #ED3A4D;
   background-color: #fff;
+}
+
+.show-more-btn:hover {
+  color: #383d48;
+}
+
+.load-more-btn:hover {
+  background-color: rgb(227, 51, 68);
 }
 
 @media only screen and (min-width: 600px) {

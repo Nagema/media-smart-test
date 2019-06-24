@@ -49,7 +49,7 @@ class App extends React.Component {
               isLoading={isLoading}
             />
           } />
-          <Route path="/memberDetail/:id"
+          <Route path="/:memberDetail/:id"
             render={(memberData) =>
               <MemberDetail
                 memberId={memberData.match.params.id}
