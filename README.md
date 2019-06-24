@@ -36,11 +36,11 @@ The endpoint needs an authorization parameter. To obtain it you have to look at 
 
 ### Member list 
 
-![screensot demo](../images/member-list.png "Screenshot Demo")
+![screensot demo](screenshots/member-list.png "Screenshot Demo")
 
 ### Member detail
 
-![screensot character detail](../images/member-detail.png "Screenshot detail")
+![screensot character detail](screenshots/member-detail.png "Screenshot detail")
 
 
 ## Author
